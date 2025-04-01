@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>從國際導遊到鄉村振興帶頭人：何瑜娟的電商扶貧之路</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            color: #666;
+            font-weight: 400;
+            margin-top: 0;
+            font-style: italic;
+        }
+        
+        .lead {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #444;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-left: 4px solid #e74c3c;
+            line-height: 1.7;
+        }
+        
+        h3 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #e74c3c;
+            border-bottom: 2px dashed #ddd;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            font-weight: 600;
+        }
+        
+        p {
+            font-size: 17px;
+            margin-bottom: 20px;
+            text-align: justify;
+            letter-spacing: 0.5px;
+        }
+        
+        .image-container {
+            margin: 40px auto;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .image-container img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+            display: block;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+        
+        .image-caption {
+            font-size: 15px;
+            color: #666;
+            margin-top: 12px;
+            text-align: center;
+            font-style: italic;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+        
+        .video-container {
+            margin: 40px auto;
+            text-align: center;
+            background: #000;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        video {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: 500;
+            font-family: 'Noto Serif TC', serif;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+        
+        .quote {
+            font-family: 'Noto Serif TC', serif;
+            font-style: italic;
+            color: #555;
+            border-left: 3px solid #e74c3c;
+            padding: 15px 20px;
+            margin: 30px auto;
+            background-color: #fafafa;
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 800px;
+        }
+        
+        .reporter-note {
+            font-size: 15px;
+            color: #666;
+            border-top: 1px dashed #ccc;
+            padding-top: 25px;
+            margin-top: 50px;
+            font-style: italic;
+        }
+        
+        .highlight {
+            background-color: #fff9e6;
+            padding: 3px 5px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        /* 音樂控制按鈕 */
+        .music-control {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .music-control:hover {
+            background-color: rgba(231, 76, 60, 0.9);
+        }
+        
+        .music-control i {
+            font-size: 28px;
+            color: #e74c3c;
+        }
+        
+        .music-control:hover i {
+            color: white;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 768px) {
+            .image-container img {
+                max-height: none;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .lead {
+                font-size: 18px;
+                padding: 15px;
+            }
+            
+            .music-control {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .music-control i {
+                font-size: 24px;
+            }
+        }
+    </style>
+    <!-- 引入Font Awesome圖標 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 音樂控制按鈕 -->
+    <button class="music-control" id="musicBtn">
+        <i class="fas fa-music"></i>
+    </button>
+    <audio id="bgMusic" loop>
+        <source src="https://s11579783.github.io/muscis/%E4%B9%A1%E6%9D%91%E6%8C%AF%E5%85%B4%E5%9C%A8%E8%B7%AF%E4%B8%8A.MP3" type="audio/mpeg">
+        您的瀏覽器不支持音頻播放
+    </audio>
+
+    <div class="header">
+        <h1>從國際導遊到鄉村振興帶頭人：何瑜娟的電商扶貧之路</h1>
+        <h2>一位「新農人」用直播改寫藏區鄉村命運</h2>
+    </div>
+    
+    <div class="lead">
+        她曾是年薪百萬的國際導遊，足跡遍佈48個國家；2017年，她因愛情嫁入阿壩州小金縣，從「都市白領」變身為「高原媳婦」。如今，她是擁有百萬粉絲的「嘉絨姐姐阿娟」，培養了5000多名農村主播，帶動1500多戶農戶增收，被央視譽為「高原上的格桑花」。
+    </div>
+    
+    <div class="image-container">
+        <img src="http://img5.daguan.com/group1/M00/94/94/CgrZEmO7bm2AFVAFAAGMJ_tvQDM405.jpg" alt="何瑜娟在高原直播帶貨">
+        <div class="image-caption">何瑜娟 圖片來源：封面新聞</div>
+    </div>
+    
+    <h3>【人生轉折：從歐洲導遊到高原媳婦】</h3>
+    
+    <p>2017年，成都姑娘何瑜娟做出了一個讓所有人意外的決定——放棄年薪百萬的國際導遊工作，跟隨藏族丈夫阿勇來到阿壩州小金縣四姑娘山鎮雙橋村定居。這個海拔3200米的偏遠藏區，當時還是國家級貧困縣，貧困發生率居高不下。</p>
+    
+    <p>「第一次來到阿勇的家鄉，我被眼前的景象震驚了。」何瑜娟回憶道，「距離成都僅4小時車程，卻是完全不同的世界——破敗的房子、石子鋪成的道路，村民們還在使用旱廁。」</p>
+    
+    <div class="image-container">
+        <img src="http://img2.daguan.com/group1/M00/74/DA/CgrZE2O7bm6AHfPTAAUgoFqMG5w704.jpg" alt="何瑜娟與藏族群眾在一起">
+        <div class="image-caption">何瑜娟 圖片來源：四川在線</div>
+    </div>
+    
+    <p>然而，村民們的熱情很快融化了這個城市姑娘的心。全村的男女老少盛裝歡迎她，拿出家裡最好的食物招待她。當得知珍貴的松茸只賣幾十元一斤，養蜂人辛苦釀造的蜂蜜只能低價賣給收購商時，何瑜娟萌生了幫助村民銷售農產品的想法。</p>
+    
+    <h3>【創業之路：從朋友圈賣貨到百萬粉絲網紅】</h3>
+    
+    <p>2017年底，何瑜娟開始嘗試在朋友圈銷售婆家自製的香腸和蜂蜜，沒想到很快售罄。這次成功讓她看到了希望，註冊了「嘉絨姐姐阿娟」帳號，通過短視頻分享藏區生活和美景。</p>
+    
+    <div class="image-container">
+        <img src="http://img9.daguan.com/group1/M00/94/94/CgrZEmO7bm2ATlUPAAR5oGOpJP4532.jpg" alt="何瑜娟展示農產品">
+        <div class="image-caption">何瑜娟在直播中展示當地特色農產品</div>
+    </div>
+    
+    <p>短短一個月，她的帳號就吸引了7萬粉絲。粉絲們對視頻中出現的蜂蜜、蘋果、犛牛肉等農產品表現出濃厚興趣，紛紛留言詢問購買方式。何瑜娟抓住機遇轉型電商，開始了直播帶貨之路。</p>
+    
+    <p>「最開始村民都不理解，覺得用手機拍幾個視頻就能賣貨是天方夜譚。」何瑜娟笑著說，「但當看到我幫方爺爺3小時賣出300斤臘肉，幫果農一個月賣出200多噸蘋果時，大家的態度完全改變了。」</p>
+    
+    <h3>【扶貧成果：數字背後的溫暖故事】</h3>
+    
+    <table>
+        <tr>
+            <th>項目</th>
+            <th>成果</th>
+        </tr>
+        <tr>
+            <td>培養農村主播</td>
+            <td>5000餘人次（截至2023年）</td>
+        </tr>
+        <tr>
+            <td>帶動農戶</td>
+            <td>1500餘戶</td>
+        </tr>
+        <tr>
+            <td>年銷售額</td>
+            <td>超2000萬元（2022年）</td>
+        </tr>
+        <tr>
+            <td>榮譽獎項</td>
+            <td>「感動阿壩年度人物」、「全國農村致富帶頭人」等</td>
+        </tr>
+    </table>
+    
+    <div class="video-container">
+        <video controls>
+            <source src="https://s11579783.github.io/news-abazh/%E9%98%BF%E5%9D%9D%E5%B7%9E%E6%9D%BE%E8%8C%B8.mp4" type="video/mp4">
+            您的瀏覽器不支持視頻播放
+        </video>
+    </div>
+    
+    <p>在這些數字背後，是一個個溫暖的故事：幫80歲的米婆婆賣核桃，每單額外加5元補貼老人生活；為殘疾的胡大爺銷售手工石雕花瓶；疫情期間幫果農解決滯銷難題...何瑜娟用行動贏得了村民的信任和愛戴。</p>
+    
+    <h3>【創新模式：從「輸血」到「造血」】</h3>
+    
+    <p>何瑜娟深知，單純的帶貨幫扶只是「輸血」，要讓鄉村真正振興，必須培養「造血」能力。2020年，她在鎮上建起「村播學院」，開始系統培訓農村主播。</p>
+    
+    <p>「在農村做主播，必須是個全能型人才。」何瑜娟介紹，「不僅要會直播，還要懂選品、包裝、發貨、售後等全鏈條知識。」她的培訓課程從最基礎的手機操作教起，內容涵蓋短視頻製作、直播技巧、電商運營等方方面面。</p>
+    
+    <div class="image-container">
+        <img src="http://k.sinaimg.cn/n/sinakd20201014s/584/w1080h1104/20201014/e9df-kakmcxe6936616.jpg/w700d1q75cms.jpg" alt="何瑜娟培訓當地婦女">
+        <div class="image-caption">“嘉絨姐姐阿娟” 抖音截圖</div>
+    </div>
+    
+    <p>最讓何瑜娟自豪的是一位50歲的學員，通過拍攝養豬日常吸引「雲養豬」用戶，不僅賣光自家豬肉，還幫鄉親們銷售。如今，小金縣已實現「村村有網紅、村村有主播」。</p>
+    
+    <h3>【政協委員履職：為鄉村振興建言獻策】</h3>
+    
+    <p>2023年，何瑜娟以四川省政協委員身份參加兩會，提出了「通過培養農村主播帶動婦女靈活居家就業」的建議。她表示：「作為一名網紅，最大的優勢就是有流量和曝光量，可以把基層民生通過鏡頭反映出來，真正做到人民政協為人民。」</p>
+    
+    <div class="quote">
+        「我希望活成一束光，走到哪裡都可以帶來溫暖。能力有多大，責任就有多大。」
+        <br>——何瑜娟
+    </div>
+    
+    <p>如今，何瑜娟又將目光投向鄉村文旅產業，計劃通過發展特色民宿幫助婦女就近就業。「這意味著村中的婦女們不必背井離鄉外出務工，可以一邊工作一邊照顧家庭。」已成為母親的她，更理解這種對家庭的牽掛。</p>
+    
+    <div class="image-container">
+        <img src="http://k.sinaimg.cn/n/sinakd20201014s/37/w1064h1373/20201014/4311-kakmcxe6936679.jpg/w700d1q75cms.jpg" alt="何瑜娟與團隊工作">
+        <div class="image-caption">何瑜娟宣傳當地農產品</div>
+    </div>
+    
+    <h3>【未來展望：讓更多年輕人看見鄉村希望】</h3>
+    
+    <p>從一個人到一個團隊，從一個村到一個縣，何瑜娟的鄉村振興之路越走越寬。目前，何瑜娟團隊正進一步完善電商基礎設施，強化物流供應鏈。</p>
+    
+    <p>「我要帶更多『何瑜娟』回家鄉，讓年輕人看見鄉村的希望。」這位曾經的都市白領，如今最大的心願是吸引更多年輕人返鄉創業，共同建設美麗家鄉。</p>
+    
+    <div class="reporter-note">
+        <p><strong>【記者手記】</strong></p>
+        <p>從艾菲爾鐵塔到四姑娘山，從國際名牌到藏族服飾，何瑜娟的人生軌跡因愛而改變，卻書寫了比導遊生涯更精彩的篇章。她不僅改變了自己的命運，更改變了整個村莊的命運。在鄉村振興的大潮中，正是這樣一個個「新農人」的奮鬥，讓希望的種子在廣袤鄉村生根發芽。</p>
+    </div>
+    
+    <div class="image-container">
+        <img src="http://k.sinaimg.cn/n/sinakd20201014s/300/w1080h1620/20201014/292a-kakmcxe6936546.jpg/w700d1q75cms.jpg" alt="何瑜娟在高原風光中">
+        <div class="image-caption">何瑜娟</div>
+    </div>
+
+    <script>
+        // 音樂控制功能
+        const musicBtn = document.getElementById('musicBtn');
+        const bgMusic = document.getElementById('bgMusic');
+        let isPlaying = false;
+        
+        // 點擊按鈕控制音樂
+        musicBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicBtn.innerHTML = '<i class="fas fa-music"></i>';
+                musicBtn.style.backgroundColor = 'rgba(255,255,255,0.9)';
+                musicBtn.querySelector('i').style.color = '#e74c3c';
+            } else {
+                bgMusic.play();
+                musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                musicBtn.style.backgroundColor = 'rgba(231, 76, 60, 0.9)';
+                musicBtn.querySelector('i').style.color = 'white';
+            }
+            isPlaying = !isPlaying;
+        });
+        
+        // 頁面載入後自動播放音樂（需用戶交互後才能生效）
+        document.addEventListener('click', function initAudio() {
+            if (!isPlaying) {
+                bgMusic.volume = 0.3; // 設置音量為30%
+                bgMusic.play();
+                musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                musicBtn.style.backgroundColor = 'rgba(231, 76, 60, 0.9)';
+                musicBtn.querySelector('i').style.color = 'white';
+                isPlaying = true;
+            }
+            document.removeEventListener('click', initAudio);
+        });
+    </script>
+</body>
+</html>
